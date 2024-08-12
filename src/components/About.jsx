@@ -1,4 +1,4 @@
-import jrg from '../jrg.jpg'
+import jrg from '../images/jrg.jpg'
 
 export default function About() {
     return (

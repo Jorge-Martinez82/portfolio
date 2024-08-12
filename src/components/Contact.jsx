@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Contact() {
     return (
-        <section id="contact" className="relative">
+        <section id="contact" className="relative scroll-mt-16">
             <div className="container px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap">
 
                 <form
@@ -10,7 +10,7 @@ export default function Contact() {
                     name="contact"
                     className="container px-72 mx-auto">
                     <h2 className="text-white sm:text-4xl text-3xl mb-1 font-medium title-font">
-                        ¡Contrátame!
+                        Contact me
                     </h2>
                     <p className="leading-relaxed mb-5">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum

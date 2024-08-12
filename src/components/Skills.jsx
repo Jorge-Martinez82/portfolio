@@ -4,7 +4,7 @@ import { skills } from "../data";
 
 export default function Skills() {
     return (
-        <section id="skills">
+        <section id="skills" className= "scroll-mt-16">
             <div className="container px-5 py-10 mx-auto">
                 <div className="text-center mb-20">
                     <CpuChipIcon className="w-10 inline-block mb-4" />
@@ -21,7 +21,7 @@ export default function Skills() {
                     {skills.map((skill) => (
                         <div key={skill.tech} className="p-2 sm:w-1/2 w-full">
                             <div className="bg-gray-800 rounded flex p-4 h-full items-center">
-                                <img className="bg-gray-800 h-9 w-9 object-cover" src={skill.logo}  alt="logo"/>
+                                <img className="bg-gray-800 h-10 w-10 " src={skill.logo}  alt="logo"/>
                                 <span className="title-font font-medium text-white px-1">
                   {skill.tech}
                 </span>

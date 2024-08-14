@@ -6,6 +6,7 @@ import sqlLogo from './images/sql.png';
 import postgresqlLogo from './images/postgresql.png';
 import neuroartGif from './images/neuroart.gif';
 import triviappGif from './images/triviapp.gif';
+import reflejosGif from './images/reflejos.gif';
 
 export const projects = [
     {
@@ -22,14 +23,14 @@ export const projects = [
         description:
             "This application is a one-day project I made for presenting in the \"Hack Day\" of Salt Bootcamp. The application uses an external API to show, save, and delete questions and aswers as a trivial-like game.",
         image: triviappGif,
-        link: "",
+        link: "https://github.com/Jorge-Martinez82/TriviAPP-project",
     },
     {
-        title: "Project 3",
-        subtitle: "React and Firebase",
+        title: "Reflejos",
+        subtitle: "PHP + Firebase",
         description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-        image: "./project-3.gif",
+            "CRUD application that manages a list of athletes and sports programs that will be integrated into a medical rehabilitation platform for injury recovery. It is builded using PHP with dinamic HTML, the database used is Firestore REST API.",
+        image: reflejosGif,
         link: "",
     },
     {

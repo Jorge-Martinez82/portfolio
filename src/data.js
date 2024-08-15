@@ -7,6 +7,7 @@ import postgresqlLogo from './images/postgresql.png';
 import neuroartGif from './images/neuroart.gif';
 import triviappGif from './images/triviapp.gif';
 import reflejosGif from './images/reflejos.gif';
+import careerbotGif from './images/careerbot.gif';
 
 export const projects = [
     {
@@ -31,14 +32,14 @@ export const projects = [
         description:
             "CRUD application that manages a list of athletes and sports programs that will be integrated into a medical rehabilitation platform for injury recovery. It is builded using PHP with dinamic HTML, the database used is Firestore REST API.",
         image: reflejosGif,
-        link: "",
+        link: "https://github.com/Jorge-Martinez82/Reflejos-PHP",
     },
     {
-        title: "Project 4",
-        subtitle: "React Hooks",
+        title: "CareerBot",
+        subtitle: "Python + React + Gemini 1.5",
         description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-        image: "./project-4.gif",
+            "AI-powered chatbot designed to simulate a job interview based on my professional experience. It’s configured and personalized to respond effectively to initial interview questions making the interviewer's job easier by offering an initial insight",
+        image: careerbotGif,
         link: "",
     },
 ];

@@ -4,6 +4,7 @@ import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
+import Chat from "./components/Chat";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <About/>
         <Projects/>
         <Skills/>
+        <Chat/>
         <Contact/>
       </main>
   );

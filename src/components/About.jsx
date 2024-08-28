@@ -11,9 +11,13 @@ export default function About() {
                         <br className="hidden lg:inline-block"/>A junior fullstack developer.
                     </h1>
                     <p className="mb-8 leading-relaxed">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
-                        laborum quasi, incidunt dolore iste nostrum cupiditate voluptas?
-                        Laborum, voluptas natus?
+                        Seeking
+                        opportunities to advance my
+                        professional journey, accumulate
+                        experience in the tech industry,
+                        and enhance my existing
+                        expertise in programming and
+                        web development
                     </p>
                     <div className="flex justify-center">
                         <a
@@ -30,7 +34,7 @@ export default function About() {
                 </div>
                 <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
                     <img
-                        className="object-cover object-center rounded"
+                        className="object-cover object-center rounded-full"
                         alt="jrg"
                         src={jrg}
                     />

@@ -86,7 +86,7 @@ export default function Contact() {
                         </form>
                     </div>
                     <div className="sm:w-2/5 px-2 mt-5 pl-10 flex flex-col items-center justify-start">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A animi assumenda dolor doloremque eveniet incidunt officia placeat quisquam tempore voluptate?</p>
+                        <p>Need more information? Don't hesitate to contact me through this form. Feedback is also welcome.</p>
                         <div className="flex mt-5">
                         {contact.map((contact) => (
                                     <a className="mr-5 ml-4 hover:scale-125"

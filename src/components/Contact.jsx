@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import { UserCircleIcon } from "@heroicons/react/24/solid";
+import {contact} from "../data";
 
 export default function Contact() {
 
@@ -84,9 +85,16 @@ export default function Contact() {
                             </button>
                         </form>
                     </div>
-                    <div className="mt-10 sm:w-2/5 px-2 flex flex-col items-center justify-start">
-                        <a className="mr-5 hover:text-white" href="https://www.linkedin.com/in/jorge-martinez-5879a5213/">LinkedIn</a>
-                        <a className="mr-5 hover:text-white" href="https://github.com/Jorge-Martinez82">Github</a>
+                    <div className="sm:w-2/5 px-2 mt-5 pl-10 flex flex-col items-center justify-start">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A animi assumenda dolor doloremque eveniet incidunt officia placeat quisquam tempore voluptate?</p>
+                        <div className="flex mt-5">
+                        {contact.map((contact) => (
+                                    <a className="mr-5 ml-4 hover:scale-125"
+                                       href={contact.link}>
+                                        <img className="h-6 w-6 " src={contact.logo} alt="logo"/>
+                                    </a>
+                        ))}
+                        </div>
                     </div>
                 </div>
             </div>

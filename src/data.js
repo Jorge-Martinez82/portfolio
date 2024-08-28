@@ -8,6 +8,8 @@ import neuroartGif from './images/neuroart.gif';
 import triviappGif from './images/triviapp.gif';
 import reflejosGif from './images/reflejos.gif';
 import careerbotGif from './images/careerbot.gif';
+import linkedinLogo from './images/linkedin.png';
+import githubLogo from './images/github.png';
 
 export const projects = [
     {
@@ -68,5 +70,18 @@ export const skills = [
     {
         tech: "PostgreSQL",
         logo: postgresqlLogo
+    },
+];
+
+export const contact = [
+    {
+        name: "LinkedIn",
+        logo: linkedinLogo,
+        link: "https://www.linkedin.com/in/jorge-martinez-5879a5213/"
+    },
+    {
+        name: "Github",
+        logo: githubLogo,
+        link: "https://github.com/Jorge-Martinez82"
     },
 ];

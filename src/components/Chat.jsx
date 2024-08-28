@@ -56,7 +56,8 @@ const Chat = () => {
                     Chat with "me"
                 </button>
             ) : (
-                <div className="bg-gray-900 rounded-lg shadow-xl" style={{width: '450px', height: '500px'}}>
+                <div
+                    className="bg-gray-900 rounded-lg shadow-xl w-[25rem] max-w-xs md:max-w-sm lg:max-w-md xl:max-w-lg h-[70vh] sm:h-[80vh] max-h-[90vh]">
                     <div className="p-4 border-b border-gray-700 flex justify-between items-center">
                         <h3 className="text-white text-lg font-semibold flex items-center">
                             <ChatBubbleBottomCenterTextIcon className="w-5 h-5 mr-2"/>
@@ -69,25 +70,26 @@ const Chat = () => {
                             X
                         </button>
                     </div>
-                    <div style={{height: 'calc(100% - 60px)'}}>
+                    <div className="h-[calc(100%-60px)]">
                         <ChatContainer>
                             <MessageList
                                 scrollBehavior="smooth"
-                                typingIndicator={isTyping ? <TypingIndicator content="JorgeAI está escribiendo"/> : null}
+                                typingIndicator={isTyping ?
+                                    <TypingIndicator content="JorgeAI está escribiendo"/> : null}
                             >
-                                {messages.map((message, i) => {
-                                    return (
-                                        <Message
-                                            key={i}
-                                            model={message}
-                                        />
-                                    )
-                                })}
+                                {messages.map((message, i) => (
+                                    <Message
+                                        key={i}
+                                        model={message}
+                                    />
+                                ))}
                             </MessageList>
-                            <MessageInput attachButton={false} placeholder="Write your message here." onSend={handleSend}/>
+                            <MessageInput attachButton={false} placeholder="Write your message here."
+                                          onSend={handleSend}/>
                         </ChatContainer>
                     </div>
                 </div>
+
             )}
         </div>
     )

@@ -7,7 +7,7 @@ import { ChatBubbleBottomCenterTextIcon } from "@heroicons/react/24/solid";
 const Chat = () => {
     const [messages, setMessages] = useState([
         {
-            message: "Hello, I'm Jorge. I've configured this AI to interact with you and help you get to know me better. You can ask me questions about my professional experience, my hobbies, or anything else to get a first impression of me as a candidate. What would you like to know about me?",
+            message: "Hello, I'm Jorge. I've configured this AI chat to interact with you and help you get to know me better. You can ask me questions about my professional experience, my hobbies, or anything else to get a first impression of me as a candidate. What would you like to know about me?",
             sentTime: "just now",
             sender: "JorgeAI",
             direction: "incoming"

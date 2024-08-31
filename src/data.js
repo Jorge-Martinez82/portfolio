@@ -4,6 +4,8 @@ import javaLogo from './images/java.png';
 import springbootLogo from './images/springboot.png';
 import sqlLogo from './images/sql.png';
 import postgresqlLogo from './images/postgresql.png';
+import firebaseLogo from './images/firebase.png';
+import phpLogo from './images/php.png';
 import neuroartGif from './images/neuroart.gif';
 import triviappGif from './images/triviapp.gif';
 import reflejosGif from './images/reflejos.gif';
@@ -64,6 +66,10 @@ export const skills = [
         logo: springbootLogo
     },
     {
+        tech: "Php",
+        logo: phpLogo
+    },
+    {
         tech: "SQL",
         logo: sqlLogo
     },
@@ -71,6 +77,11 @@ export const skills = [
         tech: "PostgreSQL",
         logo: postgresqlLogo
     },
+    {
+        tech: "Firebase",
+        logo: firebaseLogo
+    },
+
 ];
 
 export const contact = [

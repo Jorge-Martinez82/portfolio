@@ -57,7 +57,7 @@ const Chat = () => {
                 </button>
             ) : (
                 <div
-                    className="bg-gray-900 rounded-lg shadow-xl w-[25rem] max-w-xs md:max-w-sm lg:max-w-md xl:max-w-lg h-[70vh] sm:h-[80vh] max-h-[90vh]">
+                    className="bg-gray-800 rounded-lg shadow-xl w-[25rem] max-w-xs md:max-w-sm lg:max-w-md xl:max-w-lg h-[70vh] sm:h-[80vh] max-h-[90vh]">
                     <div className="p-4 border-b border-gray-700 flex justify-between items-center">
                         <h3 className="text-white text-lg font-semibold flex items-center">
                             <ChatBubbleBottomCenterTextIcon className="w-5 h-5 mr-2"/>

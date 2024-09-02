@@ -86,14 +86,18 @@ export default function Contact() {
                         </form>
                     </div>
                     <div className="sm:w-2/5 px-2 mt-5 pl-10 flex flex-col items-center justify-start">
-                        <p>Need more information? Don't hesitate to contact me through this form. Feedback and suggestions are also welcome.</p>
-                        <div className="flex mt-5">
-                        {contact.map((contact) => (
-                                    <a className="mr-5 ml-4 hover:scale-125"
-                                       href={contact.link}>
-                                        <img className="h-6 w-6 " src={contact.logo} alt="logo"/>
-                                    </a>
-                        ))}
+                        <p>Need more information? Don't hesitate to contact me through this form. Feedback and
+                            suggestions are also welcome.</p>
+                        <div className="flex flex-wrap mt-5 justify-start md:justify-center">
+                            {contact.map((contact, index) => (
+                                <a
+                                    key={index}
+                                    className="mr-5 mb-3 md:mb-0 hover:scale-125 transition-transform duration-300"
+                                    href={contact.link}
+                                >
+                                    <img className="h-6 w-6" src={contact.logo} alt={`${contact.name} logo`}/>
+                                </a>
+                            ))}
                         </div>
                     </div>
                 </div>

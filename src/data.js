@@ -12,6 +12,8 @@ import reflejosGif from './images/reflejos.gif';
 import careerbotGif from './images/careerbot.gif';
 import linkedinLogo from './images/linkedin.png';
 import githubLogo from './images/github.png';
+import tailwindLogo from './images/tailwind.png';
+import bootstrapLogo from './images/bootstrap.png';
 
 export const projects = [
     {
@@ -80,6 +82,14 @@ export const skills = [
     {
         tech: "Firebase",
         logo: firebaseLogo
+    },
+    {
+        tech: "Tailwind CSS",
+        logo: tailwindLogo
+    },
+    {
+        tech: "Bootstrap",
+        logo: bootstrapLogo
     },
 
 ];

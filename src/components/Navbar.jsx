@@ -13,7 +13,7 @@ export default function Navbar() {
             <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
                 <div className="flex justify-between items-center w-full md:w-auto">
                     <a href="#about" className="title-font font-medium text-blue-500 mb-0 text-xl flex items-center">
-                        Jorge Martinez
+                        Jorge Martínez
                     </a>
                     <button onClick={toggleMenu} className="md:hidden text-white">
                         {isMenuOpen ? <XMarkIcon className="h-6 w-6" /> : <Bars3Icon className="h-6 w-6" />}

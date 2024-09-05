@@ -1,6 +1,7 @@
-import React, {useState} from "react";
+import React, {useRef, useState} from "react";
 import { UserCircleIcon } from "@heroicons/react/24/solid";
 import {contact} from "../data";
+import {useIsVisible} from "../functions/useIsVisible";
 
 export default function Contact() {
 
@@ -27,11 +28,18 @@ export default function Contact() {
             .catch((error) => alert(error));
     }
 
+    const ref = useRef(null);
+    const isVisible = useIsVisible(ref);
+
     return (
-        <section id="contact" className="relative scroll-mt-16">
+        <section
+            id="contact"
+            ref={ref}
+            className={`text-gray-400 bg-gray-900 body-font scroll-mt-20 transition-opacity duration-700 ease-in-out ${isVisible ? 'opacity-100' : 'opacity-0'} `}
+        >
             <div className="container px-5 py-10 mx-auto">
                 <div className="text-center mb-10">
-                    <UserCircleIcon className="w-10 inline-block mb-4" />
+                    <UserCircleIcon className="w-10 inline-block mb-4"/>
                     <h1 className="text-white sm:text-4xl text-3xl mb-1 font-medium title-font">
                         Contact me
                     </h1>

@@ -1,8 +1,18 @@
 import { CodeBracketIcon } from "@heroicons/react/24/solid";
-import React from "react";
+import React, { useState } from "react";
 import { projects } from "../data";
 
 export default function Projects() {
+    const [activeProject, setActiveProject] = useState(null);
+
+    const handleClick = (project) => {
+        if (activeProject === project) {
+            setActiveProject(null);
+        } else {
+            setActiveProject(project);
+        }
+    };
+
     return (
         <section id="projects" className="text-gray-400 bg-gray-900 body-font scroll-mt-20">
             <div className="container px-5 py-10 mx-auto text-center lg:px-40">
@@ -17,17 +27,24 @@ export default function Projects() {
                 </div>
                 <div className="flex flex-wrap -m-4">
                     {projects.map((project) => (
-                        <a
-                            href={project.link}
+                        <div
                             key={project.image}
-                            className="sm:w-1/2 w-100 p-4">
-                            <div className="flex relative">
+                            className="sm:w-1/2 w-full p-4"
+                            onClick={() => handleClick(project)}
+                        >
+                            <div className="flex relative cursor-pointer">
                                 <img
                                     alt="gallery"
-                                    className="rounded-2xl absolute inset-0 w-full h-full  object-center"
+                                    className={`rounded-2xl absolute inset-0 w-full h-48 sm:h-64 lg:h-80 object-center ${
+                                        activeProject === project ? 'opacity-0' : 'opacity-100'
+                                    }`}
                                     src={project.image}
                                 />
-                                <div className="rounded-2xl px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+                                <div
+                                    className={`rounded-2xl px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 transition-opacity duration-300 
+                                    ${activeProject === project ? 'opacity-100' : 'opacity-0'
+                                    }`}
+                                >
                                     <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1">
                                         {project.subtitle}
                                     </h2>
@@ -35,13 +52,19 @@ export default function Projects() {
                                         {project.title}
                                     </h1>
                                     <p className="leading-relaxed">{project.description}</p>
+                                    <a
+                                        href={project.link}
+                                        className="text-green-400 underline"
+                                        onClick={(e) => e.stopPropagation()}
+                                    >View Project on Github
+                                    </a>
                                 </div>
                             </div>
-                        </a>
+                        </div>
                     ))}
                 </div>
             </div>
-            <br/>
+            <br />
         </section>
     );
 }

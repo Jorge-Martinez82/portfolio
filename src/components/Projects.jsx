@@ -35,7 +35,7 @@ export default function Projects() {
                             <div className="flex relative cursor-pointer">
                                 <img
                                     alt="gallery"
-                                    className={`rounded-2xl absolute inset-0 w-full h-48 sm:h-64 lg:h-80 object-center ${
+                                    className={`rounded-2xl absolute inset-0 w-full h-48 sm:h-64 lg:h-72 object-center ${
                                         activeProject === project ? 'opacity-0' : 'opacity-100'
                                     }`}
                                     src={project.image}

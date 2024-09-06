@@ -44,7 +44,7 @@ export const projects = [
         title: "CareerBot",
         subtitle: "Python + React + Gemini 1.5",
         description:
-            "AI-powered chatbot designed to simulate a job interview based on my professional experience. It’s configured and personalized to respond effectively to initial interview questions making the interviewer's job easier by offering an initial insight",
+            "AI-powered chatbot designed to simulate a job interview based on my professional experience. It’s configured to respond effectively to initial interview questions making the interviewer's job easier by offering an initial insight",
         image: careerbotGif,
         link: "",
     },

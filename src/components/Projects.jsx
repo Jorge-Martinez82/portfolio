@@ -41,17 +41,45 @@ export default function Projects() {
                             className="sm:w-1/2 w-full p-4"
                             onClick={() => handleClick(project)}
                         >
-                            <div className="flex relative cursor-pointer">
+                            <div className="flex flex-col sm:flex-row relative cursor-pointer">
+                                {/* Imagen */}
                                 <img
                                     alt="gallery"
-                                    className={`rounded-2xl absolute inset-0 w-full h-48 sm:h-64 lg:h-72 object-center ${
-                                        activeProject === project ? 'opacity-0' : 'opacity-100'
+                                    className={`rounded-2xl w-full h-48 sm:h-64 lg:h-72  object-center ${
+                                        activeProject === project ? 'opacity-0 sm:opacity-100' : 'opacity-100'
                                     }`}
                                     src={project.image}
                                 />
+
+                                {/* Información para móviles (debajo de la imagen) */}
                                 <div
-                                    className={`rounded-2xl px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 transition-opacity duration-300 
-                                    ${activeProject === project ? 'opacity-100' : 'opacity-0'
+                                    className={`block sm:hidden transition-max-height duration-300 ease-in-out ${
+                                        activeProject === project ? 'max-h-screen' : 'max-h-0'
+                                    } overflow-hidden`}
+                                >
+                                    <div
+                                        className="p-4 bg-gray-900 text-white border-4 border-gray-800 rounded-2xl mt-2">
+                                        <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1">
+                                            {project.subtitle}
+                                        </h2>
+                                        <h1 className="title-font text-lg font-medium text-white mb-3">
+                                            {project.title}
+                                        </h1>
+                                        <p className="leading-relaxed">{project.description}</p>
+                                        <a
+                                            href={project.link}
+                                            className="text-green-400 underline"
+                                            onClick={(e) => e.stopPropagation()}
+                                        >
+                                            View Project on Github
+                                        </a>
+                                    </div>
+                                </div>
+
+                                {/* Información para escritorio (sobre la imagen) */}
+                                <div
+                                    className={`hidden sm:block rounded-2xl px-8 py-6 absolute z-10 inset-0 w-full border-4 border-gray-800 bg-gray-900 transition-opacity duration-300 ${
+                                        activeProject === project ? 'opacity-100' : 'opacity-0'
                                     }`}
                                 >
                                     <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1">
@@ -65,13 +93,15 @@ export default function Projects() {
                                         href={project.link}
                                         className="text-green-400 underline"
                                         onClick={(e) => e.stopPropagation()}
-                                    >View Project on Github
+                                    >
+                                        View Project on Github
                                     </a>
                                 </div>
                             </div>
                         </div>
                     ))}
                 </div>
+
             </div>
             <br/>
         </section>

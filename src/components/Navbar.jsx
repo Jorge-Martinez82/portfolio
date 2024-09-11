@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { ArrowRightIcon, Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
+import logo from "../images/JM.png";
 
 export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,19 +13,24 @@ export default function Navbar() {
         <header className="bg-gray-800 md:sticky top-0 z-10">
             <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
                 <div className="flex justify-between items-center w-full md:w-auto">
-                    <a href="#about" className="title-font font-medium text-blue-500 mb-0 text-xl flex items-center">
+                    <img className="bg-gray-800 h-10 w-10 mr-1" src={logo} alt="logo"/>
+                    <a href="#home" className="title-font font-medium text-blue-500 mb-0 text-xl flex items-center">
                         Jorge Martínez
                     </a>
                     <button onClick={toggleMenu} className="md:hidden text-white">
-                        {isMenuOpen ? <XMarkIcon className="h-6 w-6" /> : <Bars3Icon className="h-6 w-6" />}
+                        {isMenuOpen ? <XMarkIcon className="h-6 w-6"/> : <Bars3Icon className="h-6 w-6"/>}
                     </button>
                 </div>
-                <nav className={`${isMenuOpen ? 'flex' : 'hidden'} md:flex md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700 flex-col md:flex-row items-center text-base justify-center w-full md:w-auto`}>
+                <nav
+                    className={`${isMenuOpen ? 'flex' : 'hidden'} md:flex md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700 flex-col md:flex-row items-center text-base justify-center w-full md:w-auto`}>
                     <a href="#projects" className="mr-5 hover:text-white block py-2 md:py-0">
                         Projects
                     </a>
                     <a href="#skills" className="mr-5 hover:text-white block py-2 md:py-0">
                         Skills
+                    </a>
+                    <a href="#about" className="mr-5 hover:text-white block py-2 md:py-0">
+                        About me
                     </a>
                     <a
                         href="#contact"

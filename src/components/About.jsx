@@ -1,49 +1,64 @@
-import jrg from '../images/jrg.jpg'
+import React, { useRef } from "react";
+import { useIsVisible } from "../functions/useIsVisible";
+import {UserCircleIcon} from "@heroicons/react/24/solid";
 
-export default function About() {
+export function About() {
+    const ref = useRef(null);
+    const isVisible = useIsVisible(ref);
+
+    const textRef1 = useRef(null);
+    const textIsVisible1 = useIsVisible(textRef1);
+
+    const textRef2 = useRef(null);
+    const textIsVisible2 = useIsVisible(textRef2);
+
+    const textRef3 = useRef(null);
+    const textIsVisible3 = useIsVisible(textRef3);
+
     return (
-        <section id="about" className="scroll-mt-16">
-            <div className="container mx-auto flex px-10 py-10 md:flex-row flex-col items-center">
-                <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-                    <img
-                        className="object-cover object-center rounded-full"
-                        alt="jrg"
-                        src={jrg}
-                    />
-                </div>
-                <div
-                    className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-                    <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
-                        Hello, I am Jorge
-                        <br className="hidden lg:inline-block"/>
-                        <span className="block lg:hidden">A junior fullstack developer.</span>
-                        <span className="hidden lg:inline">A junior fullstack developer.</span>
+        <section
+            id="about"
+            ref={ref}
+            className={`text-gray-400 bg-gray-900 body-font scroll-mt-20 transition-opacity duration-700 ease-in-out ${isVisible ? 'opacity-100' : 'opacity-0'}`}
+        >
+            <div className="container px-5 py-10 mx-auto">
+                <div className="text-center mb-10">
+                    <UserCircleIcon className="w-10 inline-block mb-4"/>
+                    <h1 className="sm:text-4xl text-3xl font-medium title-font text-white mb-4">
+                        About me
                     </h1>
-
-                    <p className="mb-8 leading-relaxed">
-                        Seeking
-                        opportunities to advance my
-                        professional journey, accumulate
-                        experience in the tech industry,
-                        and enhance my existing
-                        expertise in programming and
-                        web development
-                    </p>
-                    <div className="flex justify-center">
-                        <a
-                            href="#contact"
-                            className="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">
-                            Work with me
-                        </a>
-                        <a
-                            href="#projects"
-                            className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
-                            See my projects
-                        </a>
+                </div>
+                <div className="flex flex-wrap flex-col items-center">
+                    <div
+                        ref={textRef1}
+                        className={`self-start bg-gray-800 rounded flex p-4 h-full items-center text-center mb-10 transition-transform duration-1000 ease-in-out transform w-full sm:w-full lg:w-1/2 ${
+                            textIsVisible1 ? 'opacity-100 lg:translate-x-32' : 'opacity-0 -translate-x-10 lg:-translate-x-10'
+                        }`}
+                    >
+                        <p className="text-white text-lg">I worked for many years in the telecommunications field. In 2020, I decided to make a significant change in my professional life to pursue my dream of becoming a software developer. I began studying for a degree to build a solid foundation for a successful career.</p>
+                    </div>
+                    <div
+                        ref={textRef2}
+                        className={`self-end bg-gray-800 rounded flex p-4 h-full items-center text-center mb-10 transition-transform duration-1000 ease-in-out transform w-full sm:w-full lg:w-1/2 ${
+                            textIsVisible2 ? 'opacity-100 lg:-translate-x-32' : 'opacity-0 translate-x-10 lg:translate-x-10'
+                        }`}
+                    >
+                        <p className="text-white text-lg">My diverse work experience across different fields and countries has equipped me with a wide range of soft skills and a strong work ethic, which enhance my value as a candidate. Hardworking and responsible, I approach challenges with professionalism and determination, while also maintaining a friendly and approachable attitude, as I value positive relationships with my colleagues.</p>
+                    </div>
+                    <div
+                        ref={textRef3}
+                        className={`self-start bg-gray-800 rounded flex p-4 h-full items-center text-center mb-10 transition-transform duration-1000 ease-in-out transform w-full sm:w-full lg:w-1/2 ${
+                            textIsVisible3 ? 'opacity-100 lg:translate-x-32' : 'opacity-0 -translate-x-10 lg:-translate-x-10'
+                        }`}
+                    >
+                        <p className="text-white text-lg">With a growth mindset, I am always looking to grow, improve, and learn in order to offer the best version of myself. I greatly enjoy nature, spending time with family and friends, and the camaraderie of my colleagues. Feel free to try my AI chat for more information about me</p>
                     </div>
                 </div>
-
             </div>
+
+
         </section>
-    )
+    );
 }
+
+

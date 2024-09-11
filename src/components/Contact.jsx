@@ -1,5 +1,5 @@
 import React, {useRef, useState} from "react";
-import { UserCircleIcon } from "@heroicons/react/24/solid";
+import { ChatBubbleBottomCenterTextIcon } from "@heroicons/react/24/solid";
 import {contact} from "../data";
 import {useIsVisible} from "../functions/useIsVisible";
 
@@ -39,7 +39,7 @@ export default function Contact() {
         >
             <div className="container px-5 py-10 mx-auto">
                 <div className="text-center mb-10">
-                    <UserCircleIcon className="w-10 inline-block mb-4"/>
+                    <ChatBubbleBottomCenterTextIcon className="w-10 inline-block mb-4"/>
                     <h1 className="text-white sm:text-4xl text-3xl mb-1 font-medium title-font">
                         Contact me
                     </h1>

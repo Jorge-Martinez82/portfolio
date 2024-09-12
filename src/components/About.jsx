@@ -32,7 +32,7 @@ export function About() {
                     <div
                         ref={textRef1}
                         className={`self-start bg-gray-800 rounded flex p-4 h-full items-center text-center mb-10 transition-transform duration-1000 ease-in-out transform w-full sm:w-full lg:w-1/2 ${
-                            textIsVisible1 ? 'opacity-100 lg:translate-x-32' : 'opacity-0 -translate-x-10 lg:-translate-x-10'
+                            textIsVisible1 ? 'opacity-100 lg:translate-x-32' : 'opacity-0 -translate-x-5 lg:-translate-x-5'
                         }`}
                     >
                         <p className="text-white text-lg">I worked for many years in the telecommunications field. In 2020, I decided to make a significant change in my professional life to pursue my dream of becoming a software developer. I began studying for a degree to build a solid foundation for a successful career.</p>
@@ -40,7 +40,7 @@ export function About() {
                     <div
                         ref={textRef2}
                         className={`self-end bg-gray-800 rounded flex p-4 h-full items-center text-center mb-10 transition-transform duration-1000 ease-in-out transform w-full sm:w-full lg:w-1/2 ${
-                            textIsVisible2 ? 'opacity-100 lg:-translate-x-32' : 'opacity-0 translate-x-10 lg:translate-x-10'
+                            textIsVisible2 ? 'opacity-100 lg:-translate-x-32' : 'opacity-0 translate-x-5 lg:translate-x-5'
                         }`}
                     >
                         <p className="text-white text-lg">My diverse work experience across different fields and countries has equipped me with a wide range of soft skills and a strong work ethic, which enhance my value as a candidate. Hardworking and responsible, I approach challenges with professionalism and determination, while also maintaining a friendly and approachable attitude, as I value positive relationships with my colleagues.</p>
@@ -48,10 +48,10 @@ export function About() {
                     <div
                         ref={textRef3}
                         className={`self-start bg-gray-800 rounded flex p-4 h-full items-center text-center mb-10 transition-transform duration-1000 ease-in-out transform w-full sm:w-full lg:w-1/2 ${
-                            textIsVisible3 ? 'opacity-100 lg:translate-x-32' : 'opacity-0 -translate-x-10 lg:-translate-x-10'
+                            textIsVisible3 ? 'opacity-100 lg:translate-x-32' : 'opacity-0 -translate-x-5 lg:-translate-x-5'
                         }`}
                     >
-                        <p className="text-white text-lg">With a growth mindset, I am always looking to grow, improve, and learn in order to offer the best version of myself. I greatly enjoy nature, spending time with family and friends, and the camaraderie of my colleagues. Feel free to try my AI chat for more information about me</p>
+                        <p className="text-white text-lg">With a growth mindset, I am always looking to grow, improve, and learn in order to offer the best version of myself. I greatly enjoy nature, spending time with family and friends, and the camaraderie of my colleagues. Feel free to try my AI chat for more information about me.</p>
                     </div>
                 </div>
             </div>

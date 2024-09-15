@@ -18,7 +18,7 @@ import bootstrapLogo from './images/bootstrap.png';
 export const projects = [
     {
         title: "NeuroArt",
-        subtitle: "React + Springboot + PostreSQL",
+        subtitle: "React + Springboot + PostgreSQL",
         description:
             "Web application that leverages AI to generate images based on user prompts. It assists users in making their prompts more effective by offering various suggestions to enhance their initial prompts",
         image: neuroartGif,
@@ -26,7 +26,7 @@ export const projects = [
     },
     {
         title: "TriviAPP",
-        subtitle: "React + Springboot + PostreSQL",
+        subtitle: "React + Springboot + PostgreSQL",
         description:
             "This application is a one-day project I made for presenting in the \"Hack Day\" of Salt Bootcamp. The application uses an external API to show, save, and delete questions and aswers as a trivial-like game.",
         image: triviappGif,

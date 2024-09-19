@@ -31,7 +31,7 @@ export function About() {
                 <div className="flex flex-wrap flex-col items-center">
                     <div
                         ref={textRef1}
-                        className={`self-start bg-gray-800 rounded flex p-4 h-full items-center text-center mb-10 transition-transform duration-1000 ease-in-out transform w-full sm:w-full lg:w-1/2 ${
+                        className={`self-start border-l-4 border-l-blue-500 bg-gray-800 rounded flex p-4 h-full items-center text-center mb-10 transition-transform duration-1000 ease-in-out transform w-full sm:w-full lg:w-1/2 ${
                             textIsVisible1 ? 'opacity-100 lg:translate-x-32' : 'opacity-0 -translate-x-5 lg:-translate-x-5'
                         }`}
                     >
@@ -39,7 +39,7 @@ export function About() {
                     </div>
                     <div
                         ref={textRef2}
-                        className={`self-end bg-gray-800 rounded flex p-4 h-full items-center text-center mb-10 transition-transform duration-1000 ease-in-out transform w-full sm:w-full lg:w-1/2 ${
+                        className={`self-end border-r-4 border-r-blue-500 bg-gray-800 rounded flex p-4 h-full items-center text-center mb-10 transition-transform duration-1000 ease-in-out transform w-full sm:w-full lg:w-1/2 ${
                             textIsVisible2 ? 'opacity-100 lg:-translate-x-32' : 'opacity-0 translate-x-5 lg:translate-x-5'
                         }`}
                     >
@@ -47,7 +47,7 @@ export function About() {
                     </div>
                     <div
                         ref={textRef3}
-                        className={`self-start bg-gray-800 rounded flex p-4 h-full items-center text-center mb-10 transition-transform duration-1000 ease-in-out transform w-full sm:w-full lg:w-1/2 ${
+                        className={`self-start border-l-4 border-l-blue-500 bg-gray-800 rounded flex p-4 h-full items-center text-center mb-10 transition-transform duration-1000 ease-in-out transform w-full sm:w-full lg:w-1/2 ${
                             textIsVisible3 ? 'opacity-100 lg:translate-x-32' : 'opacity-0 -translate-x-5 lg:-translate-x-5'
                         }`}
                     >

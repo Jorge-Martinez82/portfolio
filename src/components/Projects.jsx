@@ -46,7 +46,7 @@ export default function Projects() {
                                 <img
                                     alt="gallery"
                                     className={`rounded-2xl w-full h-48 sm:h-64 lg:h-72  object-center ${
-                                        activeProject === project ? 'opacity-0 sm:opacity-100' : 'opacity-100'
+                                        activeProject === project ? 'sm:opacity-100' : 'opacity-100'
                                     }`}
                                     src={project.image}
                                 />

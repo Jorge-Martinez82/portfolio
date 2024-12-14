@@ -14,6 +14,7 @@ import linkedinLogo from './images/linkedin.png';
 import githubLogo from './images/github.png';
 import tailwindLogo from './images/tailwind.png';
 import bootstrapLogo from './images/bootstrap.png';
+import figmaLogo from './images/figma.png';
 
 export const projects = [
     {
@@ -90,6 +91,10 @@ export const skills = [
     {
         tech: "Bootstrap",
         logo: bootstrapLogo
+    },
+    {
+        tech: "Figma",
+        logo: figmaLogo
     },
 
 ];

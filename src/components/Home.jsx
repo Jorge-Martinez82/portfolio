@@ -21,13 +21,7 @@ export default function Home() {
                     </h1>
 
                     <p className="mb-8 leading-relaxed">
-                        Seeking
-                        opportunities to advance my
-                        professional journey, accumulate
-                        experience in the tech industry,
-                        and enhance my existing
-                        expertise in programming and
-                        web development
+                        Tech enthusiast focused on modern web solutions. Passionate about fullstack technology and continuous learning.
                     </p>
                     <div className="flex justify-center">
                         <a
